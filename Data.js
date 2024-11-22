@@ -2,9 +2,9 @@ const mysql = require('mysql2/promise'); // Import mysql2/promise for promise-ba
 
 // Create a connection pool
 const pool = mysql.createPool({
-    host: '18.224.53.172',
+    host: '',
     user: 'Tal',
-    password: 'PCfortress9!',
+    password: '',
     database: 'proxy_data',
     waitForConnections: true,
     connectionLimit: 10,
