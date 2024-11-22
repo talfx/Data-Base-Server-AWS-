@@ -2,9 +2,9 @@ const mysql = require('mysql2/promise');
 
 // Create a connection pool
 const pool = mysql.createPool({
-    host: '18.224.53.172',
-    user: 'Tal',
-    password: 'PCfortress9!',
+    host: '',
+    user: '',
+    password: '',
     database: 'proxy_data',
     waitForConnections: true,
     connectionLimit: 10,
