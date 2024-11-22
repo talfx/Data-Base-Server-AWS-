@@ -128,7 +128,7 @@ const authenticate = (req, res, next) => {
     const credentials = Buffer.from(base64Credentials, 'base64').toString('ascii');
     const [username, password] = credentials.split(':');
 
-    if (username === 'PrecisionData' && password === 'PCfortress9!') {
+    if (username === '' && password === '') {
         return next();  // Allow access
     } else {
         return res.status(403).send('Invalid credentials');
